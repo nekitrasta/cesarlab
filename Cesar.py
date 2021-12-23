@@ -1,4 +1,4 @@
-alpha = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+alphavit = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
 key = int(input('Key:'))
 str1 = input()
 res = ''
@@ -8,7 +8,7 @@ for i in str1:
         res+=' '
         continue
     
-    res += alpha[(alpha.find(i) + (key + 1)) % len(alpha)]
+    res += alphavit[(alphavit.find(i) + (key + 1)) % len(alphavit)]
     
 print('Result: "' + res + '"')
 
